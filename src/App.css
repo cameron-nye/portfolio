@@ -1,0 +1,200 @@
+/* .App {
+
+} */
+
+.navMain {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  width: 90vw;
+  margin-top: 50px;
+  margin-left: 5vw;
+  position: fixed;
+  justify-content: space-between;
+}
+
+.scrolled {
+  color: white;
+  background-color: springgreen;
+}
+
+.dropdown {
+  text-align: right;
+  animation: fade-out 0.4 ease-in;
+  /* background-color: bisque; */
+}
+
+.dropdown ul {
+  list-style-type: none;
+  margin-top: 8vh;
+  font-size: 70px;
+  line-height: 1.5;
+}
+
+li {
+  cursor: pointer;
+}
+
+.dropdown {
+  font-weight: 700;
+}
+
+.dropdown ul .li1 {
+  animation: float-down-menu 0.2s 0.15s ease-out;
+  animation-fill-mode: both;
+}
+
+.dropdown ul .li2 {
+  animation: float-down-menu 0.2s 0.2s ease-out;
+  animation-fill-mode: both;
+}
+
+.dropdown ul .li3 {
+  animation: float-down-menu 0.2s 0.25s ease-out;
+  animation-fill-mode: both;
+}
+
+.dropdown ul .li4 {
+  animation: float-down-menu 0.2s 0.3s ease-out;
+  animation-fill-mode: both;
+}
+.dropdown ul .li5 {
+  animation: float-down-menu 0.2s 0.35s ease-out;
+  animation-fill-mode: both;
+}
+
+.hideDropdown {
+  height: 0px;
+  /* visibility: none; */
+  overflow: hidden;
+  animation: menu-close 0.3s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.dropdown ul .social {
+  animation: float-down-menu 0.2s 0.35s ease-out;
+  animation-fill-mode: both;
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+}
+
+h3 {
+  font-weight: bolder;
+  font-size: 28px;
+  margin: 0px;
+  cursor: pointer;
+  animation: float-down 0.9s 1s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+.hamMenu {
+  box-sizing: border-box;
+  width: 30px;
+  height: 35px;
+  position: fixed;
+  right: 5vw;
+  cursor: pointer;
+  animation: float-down 0.9s 1s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+.line {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #353535;
+  transition: all cubic-bezier(0.25, 0.1, 0.28, 1) 0.4s;
+}
+
+.line01 {
+  top: 15%;
+}
+
+.line02 {
+  top: 40%;
+}
+
+.line03 {
+  top: 65%;
+}
+
+.line01closed {
+  transform: rotate(-45deg);
+  top: 49%;
+}
+
+.line02closed,
+.line03closed {
+  transform: rotate(45deg);
+  top: 49%;
+}
+
+.body {
+  animation: fade-in 0.3s ease-in;
+  display: flex;
+  flex-direction: column;
+}
+
+.hide {
+  animation: fade-out 0.3s ease-in;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@keyframes float-down {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: inherit;
+  }
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+}
+@keyframes float-down-menu {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: inherit;
+  }
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+}
+@keyframes menu-close {
+  100% {
+    transform: translateY(0px);
+    opacity: 0;
+    visibility: inherit;
+  }
+  0% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

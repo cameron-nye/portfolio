@@ -1,0 +1,16 @@
+
+.page3 {
+  color: #353535;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.page3cont {
+  width: 80vw;
+  background-color: gray;
+
+}
