@@ -114,6 +114,7 @@ class App extends Component {
                       <img className="social" src={linkedinlogo} alt="" />
                     </a>
                   </div>
+                  <li className='mobileSite'>*Mobile site coming soon</li>
                 </ul>
               </div>
             </div>
