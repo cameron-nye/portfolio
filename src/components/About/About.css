@@ -1,6 +1,6 @@
 .about {
   color: white;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-color: #202020;
   display: flex;
@@ -8,11 +8,17 @@
 }
 
 .aboutcont {
+  min-height: 100vh;
   width: 80vw;
   /* background-color: gray; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.aboutTitle {
+  height: 100vh;
 }
 
 /* .background {

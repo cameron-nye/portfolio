@@ -17,5 +17,14 @@
   flex-direction: column;
   /* background-color: gray; */
   margin: auto;
+  position: relative;
 
+}
+
+#arrowDown {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  bottom: 0;
+  margin: auto;
 }

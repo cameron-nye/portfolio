@@ -24,19 +24,26 @@ section h2 {
   align-items: center;
 }
 
-.techstack {
+/* .techstack {
   margin-top: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+} */
+
+.techstack {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr)
 }
 
 .square {
-  height: 160px;
-  width: 160px;
+  height: 100%;
+  width: 100%;
   margin: 25px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
 }
 
