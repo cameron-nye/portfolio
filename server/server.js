@@ -12,6 +12,8 @@ const {
     
 const app = express()
 
+app.use( express.static( `${__dirname}/../build` ) )
+
 app.use(bodyParser.json())
 
 let transporter = nodemailer.createTransport({
