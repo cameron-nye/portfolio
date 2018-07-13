@@ -15,7 +15,7 @@
 
 .scrolled {
   color: white;
-  background-color: springgreen;
+  /* background-color: springgreen; */
 }
 
 .dropdown {
@@ -72,7 +72,7 @@ li {
 }
 
 .dropdown ul .social {
-  animation: float-down-menu 0.2s 0.35s ease-out;
+  animation: float-down-menu 0.2s 0.5s ease-out;
   animation-fill-mode: both;
   height: 50px;
   width: 50px;
@@ -87,6 +87,7 @@ h3 {
   animation: float-down 0.9s 1s;
   animation-fill-mode: forwards;
   visibility: hidden;
+  color: #9b9b9b;
 }
 
 .hamMenu {
@@ -105,7 +106,7 @@ h3 {
   position: absolute;
   height: 4px;
   width: 100%;
-  background: #353535;
+  background: #9b9b9b;
   transition: all cubic-bezier(0.25, 0.1, 0.28, 1) 0.4s;
 }
 

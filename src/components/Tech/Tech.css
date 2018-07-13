@@ -46,6 +46,13 @@ section h2 {
   margin: auto;
 }
 
+.techimground {
+  height: 115px;
+  width: 115px;
+  margin: auto;
+  border-radius: 500px;
+}
+
 .square h5 {
   margin: 0px;
   margin: auto;

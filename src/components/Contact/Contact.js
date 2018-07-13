@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import axios from "axios";
 import TextField from "@material-ui/core/TextField";
 import "typeface-ubuntu";
-
+//MEDIA
+import githublogo from "../../../src/pictures/github.png";
+import linkedinlogo from "../../../src/pictures/linkedin.png";
 //STYLE
 import "./Contact.css";
 
@@ -43,7 +45,7 @@ export default class Contact extends Component {
   toggleSent() {
     this.setState({
       sent: false
-    })
+    });
   }
 
   render() {
@@ -53,12 +55,12 @@ export default class Contact extends Component {
         {this.state.sent ? (
           <div className="thanksWrapper">
             <div className="thanksCont">
-              <h2 className='thanks'>Thank You!</h2>
-              <h5 className='thanks'>I will respond shortly</h5>
+              <h2 className="thanks">Thank You!</h2>
+              <h5 className="thanks">I will respond shortly</h5>
             </div>
             <div className="button toggle" onClick={() => this.toggleSent()}>
-                Send Another Message
-              </div>
+              Send Another Message
+            </div>
           </div>
         ) : (
           <div className="contactContainer">
@@ -96,7 +98,9 @@ export default class Contact extends Component {
             <div className="row3">
               <TextField
                 // style={{ width: 500 }}
-                fullWidth  
+                multiline
+                rowsMax="100"
+                fullWidth
                 id="message"
                 label="How can I help you?"
                 value={this.state.message}
@@ -109,6 +113,14 @@ export default class Contact extends Component {
             <div className="row4">
               <div className="button" onClick={() => this.handleSubmit()}>
                 Send
+              </div>
+              <div>
+                <a href="https://github.com/csnye86">
+                  <img className="social" src={githublogo} alt="" />
+                </a>
+                <a href="https://www.linkedin.com/in/cameronnye/">
+                  <img className="social" src={linkedinlogo} alt="" />
+                </a>
               </div>
             </div>
           </div>

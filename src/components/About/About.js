@@ -8,7 +8,11 @@ export default class About extends Component {
       <div>
         <div className="about">
           <div className="aboutcont">
-            <h4>About Me</h4>
+            <div className="background">
+              <figure></figure>
+              <figure></figure>
+              <figure></figure>
+            </div>
           </div>
         </div>
       </div>

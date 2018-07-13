@@ -7,3 +7,8 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #353535
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

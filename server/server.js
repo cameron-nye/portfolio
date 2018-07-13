@@ -23,7 +23,7 @@ let transporter = nodemailer.createTransport({
 })
 
 app.post('/email', (req, res, next) => {
-  console.log('endpoint hit')
+  // console.log('endpoint hit')
   const {name, email, message} = req.body
   let mail = {
     from: EMAIL,

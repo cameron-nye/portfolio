@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-contactContainer {
+.contactContainer {
   animation: fade-in 1s ease-in;
 }
 
@@ -23,6 +23,12 @@ contactContainer {
 }
 .row3 {
   margin-top: 30px;
+}
+
+.row4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .button {
@@ -65,6 +71,14 @@ contactContainer {
   margin-top: 20px;
   margin-bottom: 0px;
 
+}
+
+.social {
+  height: 50px;
+  width: 50px;
+  margin-top: 65px;
+  margin-left: 20px;
+  color: 
 }
 
 @keyframes fade-out {

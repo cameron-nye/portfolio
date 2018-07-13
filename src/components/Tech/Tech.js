@@ -26,8 +26,8 @@ export default class Tech extends Component {
               <div className="square"><img className='techimg'src={js} alt=""/><h5>Javascript ES6</h5></div>
               <div className="square"><img className='techimg' src={react} alt=""/><h5>React</h5></div>
               <div className="square"><img className='techimg' src={redux} alt=""/><h5>Redux</h5></div>
-              <div className="square"><img  className='techimg' src={node} alt=""/><h5>NodeJS</h5></div>
-              <div className="square"><img className='techimg' src={express} alt=""/><h5>Express</h5></div>
+              <div className="square"><img  className='techimground' src={node} alt=""/><h5>NodeJS</h5></div>
+              <div className="square"><img className='techimground' src={express} alt=""/><h5>Express</h5></div>
               <div className="square"><img className='techimg' src={sql} alt=""/><h5>PostgreSQL</h5></div>
               <div className="square"><img className='techimg' src={html} alt=""/><h5>HTML5</h5></div>
               <div className="square"><img className='techimg' src={css} alt=""/><h5>CSS3</h5></div>

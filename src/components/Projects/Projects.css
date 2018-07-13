@@ -1,16 +1,21 @@
 
-.page3 {
+.projects {
   color: #353535;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-color: white;
   display: flex;
   justify-content: space-around;
-  
+  flex-direction: column;
 }
 
-.page3cont {
+.projectsCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80vw;
-  background-color: gray;
+  flex-direction: column;
+  /* background-color: gray; */
+  margin: auto;
 
 }

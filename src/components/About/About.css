@@ -1,16 +1,87 @@
-
-
 .about {
   color: white;
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background-color: #202020;
   display: flex;
   justify-content: space-around;
 }
 
 .aboutcont {
   width: 80vw;
-  background-color: gray;
-
+  /* background-color: gray; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* .background {
+  height: 85%;
+  width: 100%;
+  background: url("./pics/kids.jpg"), url("./pics/athena.jpg"),
+    url("./pics/cam.jpg");
+  background-size: cover;
+  background-position: center;
+} */
+
+.background {
+  height: 85%;
+  width: 100%;
+  position: relative;
+}
+
+.background > figure {
+  animation: imageAnimation 30s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  /* height: 100%; */
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  /* width: 100%; */
+  z-index: 0;
+  margin: 0px;
+}
+
+figure {
+  height: 100%;
+  width: 100%;
+}
+
+.background > figure:nth-child(1) { 
+  background-image: url('./pics/cam.jpg');
+}
+
+.background > figure:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url('./pics/athena.jpg');
+}
+
+.background > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: url('./pics/kids.jpg'); 
+}
+
+@keyframes imageAnimation {  
+  0% {
+ animation-timing-function: ease-in;
+ opacity: 0;
+}
+  8% {
+ animation-timing-function: ease-out;
+ opacity: 1;
+}
+  17% {
+ opacity: 1
+}
+  25% {
+ opacity: 0
+}
+  100% {
+ opacity: 0
+}
+}
+
