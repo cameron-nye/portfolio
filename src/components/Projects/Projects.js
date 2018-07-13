@@ -21,12 +21,14 @@ export default class Projects extends Component {
         {
           images: [med1, med2, med3, med4],
           title: 'MedTel: Medical Charting',
-          desc: ''
+          desc: '',
+          link: 'https://medtel.devmtn-projects.com/#/'
         },
         {
           images: [image1, image2, image3, image4],
           title: 'Athena Fitness',
-          desc: ''
+          desc: '',
+          link: 'http://athenafitness.devmtn-projects.com/#/'
         }
       ]
     }
@@ -39,7 +41,7 @@ export default class Projects extends Component {
       // console.log(project)
       return (
         <div key={project + i} className='projectsCont'>
-          <Project title={project.title} desc={project.desc} image1={project.images[0]} image2={project.images[1]} image3={project.images[2]}image4={project.images[3]}/>
+          <Project title={project.title} desc={project.desc} image1={project.images[0]} image2={project.images[1]} image3={project.images[2]}image4={project.images[3]} link={project.link}/>
         </div>
       )
     })

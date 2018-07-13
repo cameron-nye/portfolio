@@ -150,48 +150,6 @@ class Project extends Component {
                 Close
               </div>
             </div>
-
-            {/* COVERFLOW */}
-
-            {/* <StyleRoot>
-              <Coverflow
-              height={500}
-              // width={60%}
-              displayQuantityOfSide={2}
-              navigation={true}
-              enableHeading={false}
-              active={0}
-              >
-              <div
-              // onClick={() => fn()}
-              // onKeyDown={() => fn()}
-              role="menuitem"
-              tabIndex="0"
-              >
-              <img
-              src={this.props.image1}
-              alt="title or description"
-              style={{ display: "block", height: '200px', width: '350px' }}
-              />
-              </div>
-              <img
-              src={this.props.image2}
-              alt="title or description"
-              style={{ display: "block", height: '200px', width: '350px' }}
-              />
-              <img
-              src={this.props.image3}
-              alt="title or description"
-              style={{ display: "block", height: '200px', width: '350px' }}
-              />
-              <img
-              src={this.props.image4}
-              alt="title or description"
-              style={{ display: "block", height: '200px', width: '350px' }}
-              />
-              </Coverflow>
-            </StyleRoot> */}
-            {/* </div> */}
           </div>
         ) : (
           <div className="projOverview">
@@ -201,7 +159,7 @@ class Project extends Component {
               <h4>{this.props.desc}</h4>
             </div>
             <div className="hidden">
-              <a href="http://athenafitness.devmtn-projects.com/#/">
+              <a href={this.props.link}>
                 <h2>Live Site</h2>
               </a>
               <h2
