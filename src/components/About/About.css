@@ -17,6 +17,7 @@
   font-size: 180px;
   font-weight: bolder;
   color: black;
+  margin-bottom: 100px;
 }
 .aboutCont {
   display: flex;
@@ -26,6 +27,7 @@
   position: relative;
   height: 100vh;
   width: 80%;
+  margin-bottom: 100px;
 }
 
 .aboutCont > .aboutPic {

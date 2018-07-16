@@ -52,6 +52,7 @@ export default class Contact extends Component {
     // console.log(this.state)
     return (
       <div className="contact">
+        <div className="contactHeader">Contact</div>
         {this.state.sent ? (
           <div className="thanksWrapper">
             <div className="thanksCont">
@@ -63,64 +64,66 @@ export default class Contact extends Component {
             </div>
           </div>
         ) : (
-          <div className="contactContainer">
-            <h1 className="row1">
-              Let's <span style={{ color: "lightgray" }}>get in</span> touch
-            </h1>
-            <div className="row2">
-              <div className="name">
+          <div className="contactWrapper">
+            <div className="contactCont">
+              <h1 className="row1">
+                Let's <span style={{ color: "lightgray" }}>get in</span> touch
+              </h1>
+              <div className="row2">
+                <div className="name">
+                  <TextField
+                    style={{ width: 200 }}
+                    id="name"
+                    label="What is your name?"
+                    value={this.state.name}
+                    onChange={e => {
+                      this.inputHandler(e, "name");
+                    }}
+                    margin="normal"
+                  />
+                </div>
+                <div className="email">
+                  <TextField
+                    style={{
+                      width: 200
+                    }}
+                    id="email"
+                    label="Your email"
+                    value={this.state.email}
+                    onChange={e => {
+                      this.inputHandler(e, "email");
+                    }}
+                    margin="normal"
+                  />
+                </div>
+              </div>
+              <div className="row3">
                 <TextField
-                  style={{ width: 200 }}
-                  id="name"
-                  label="What is your name?"
-                  value={this.state.name}
+                  // style={{ width: 500 }}
+                  multiline
+                  rowsMax="100"
+                  fullWidth
+                  id="message"
+                  label="How can I help you?"
+                  value={this.state.message}
                   onChange={e => {
-                    this.inputHandler(e, "name");
+                    this.inputHandler(e, "message");
                   }}
                   margin="normal"
                 />
               </div>
-              <div className="email">
-                <TextField
-                  style={{
-                    width: 200
-                  }}
-                  id="email"
-                  label="Your email"
-                  value={this.state.email}
-                  onChange={e => {
-                    this.inputHandler(e, "email");
-                  }}
-                  margin="normal"
-                />
-              </div>
-            </div>
-            <div className="row3">
-              <TextField
-                // style={{ width: 500 }}
-                multiline
-                rowsMax="100"
-                fullWidth
-                id="message"
-                label="How can I help you?"
-                value={this.state.message}
-                onChange={e => {
-                  this.inputHandler(e, "message");
-                }}
-                margin="normal"
-              />
-            </div>
-            <div className="row4">
-              <div className="button" onClick={() => this.handleSubmit()}>
-                Send
-              </div>
-              <div>
-                <a href="https://github.com/csnye86">
-                  <img className="social" src={githublogo} alt="" />
-                </a>
-                <a href="https://www.linkedin.com/in/cameronnye/">
-                  <img className="social" src={linkedinlogo} alt="" />
-                </a>
+              <div className="row4">
+                <div className="button" onClick={() => this.handleSubmit()}>
+                  Send
+                </div>
+                <div>
+                  <a href="https://github.com/csnye86">
+                    <img className="social" src={githublogo} alt="" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/cameronnye/">
+                    <img className="social" src={linkedinlogo} alt="" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

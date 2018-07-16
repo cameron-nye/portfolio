@@ -1,28 +1,49 @@
 
 .contact {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-color: white;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.contactContainer {
+.contactHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 180px;
+  font-weight: bolder;
+  color: lightgray;
+}
+
+.contactWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 80%;
   animation: fade-in 1s ease-in;
 }
 
-.contactContainer h1 {
-  font-size: 60px;
+.contactCont {
+  width: 50%;
+}
+
+.contactCont h1 {
+  font-size: 65px;
+  text-align: justify; 
 }
 
 .row2 {
-  margin-top: 50px;
+  margin-top: 60px;
   display: flex;
   justify-content: space-between;
 }
 .row3 {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .row4 {
