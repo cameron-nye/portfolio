@@ -1,67 +1,80 @@
 
 .page2 {
   color: whitesmoke;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
-  background-color: #353535;
+  background-color: #1f1f1f;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.page2Title {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 180px;
+  font-weight: bolder;
+  color: black;
+  /* position: absolute;
+  bottom: 10px; */
+}
+
+#arrowDownTech {
+  font-size: 50px;
+  color: black;
 }
 
 .page2cont {
+  height: 100vh;
   width: 80vw;
   /* background-color: gray; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
-section h2 {
-  font-size: 90px;
-  color: whitesmoke;
+section h5 {
+  font-size: 18px;
+  color: #9b9b9b;
   margin: 0px;
-  margin-top: 8%;
+  margin-top: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-/* .techstack {
-  margin-top: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-} */
-
 .techstack {
   display: grid;
-  grid-template-columns: repeat(4, 1fr)
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px 70px;
 }
 
 .square {
   height: 100%;
   width: 100%;
-  margin: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .techimg {
-  height: 115px;
-  width: 115px;
-  margin: auto;
+  height: 150px;
+  width: 150px;
 }
 
 .techimground {
-  height: 115px;
-  width: 115px;
+  height: 150px;
+  width: 150px;
   margin: auto;
   border-radius: 500px;
 }
 
-.square h5 {
-  margin: 0px;
-  margin: auto;
-  font-size: 18px;
-}
