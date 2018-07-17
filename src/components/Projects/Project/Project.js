@@ -1,16 +1,12 @@
 import React, { Component } from "react";
-import { StyleRoot } from "radium";
 // import Coverflow from "react-coverflow";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import MobileStepper from "@material-ui/core/MobileStepper";
-import Paper from "@material-ui/core/Paper";
-import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import KeyboardArrowLeft from "@material-ui/icons/KeyboardArrowLeft";
 import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
-import HighlightOff from "@material-ui/icons/HighlightOff";
 
 //Style
 import "./Project.css";
@@ -19,13 +15,13 @@ import "./Project.css";
 
 const styles = theme => ({
   root: {
-    maxWidth: 1000,
+    maxWidth: 900,
     flexGrow: 1,
     margin: "auto"
   },
   img: {
-    height: 650,
-    maxWidth: 1000,
+    height: 550,
+    maxWidth: 900,
     overflow: "hidden",
     width: "100%"
   }
@@ -153,7 +149,7 @@ class Project extends Component {
           </div>
         ) : (
           <div className="projOverview">
-            <img src={this.props.image1} className="img" />
+            <img src={this.props.image1} className="img" alt=''/>
             <div className="projTitle">
               <h2>{this.props.title}</h2>
               <h4>{this.props.desc}</h4>

@@ -41,6 +41,7 @@ export default class Projects extends Component {
   render() {
     let projectList = this.state.projects.map((project, i) => {
       // console.log(project)
+      console.log(this.state.projects.length)
       return (
         <div key={project + i} className="projectCont">
           <Project
@@ -53,7 +54,7 @@ export default class Projects extends Component {
             link={project.link}
             github={project.github}
           />
-          <FontAwesomeIcon icon="angle-down" id="arrowDown" />
+          {i < this.state.projects.length - 1 ? <FontAwesomeIcon icon="angle-down" id="arrowDown" />: null}
         </div>
       );
     });
