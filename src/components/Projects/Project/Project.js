@@ -162,6 +162,9 @@ class Project extends Component {
               <a href={this.props.link}>
                 <h2>Live Site</h2>
               </a>
+              <div className="github">
+                <a href={this.props.github}>Github</a>
+              </div>
               <h2
                 onClick={() => {
                   this.toggleFn();

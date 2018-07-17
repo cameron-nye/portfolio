@@ -24,13 +24,15 @@ export default class Projects extends Component {
           images: [med1, med2, med3, med4],
           title: "MedTel: Medical Charting",
           desc: "",
-          link: "https://medtel.devmtn-projects.com/#/"
+          link: "https://medtel.devmtn-projects.com/#/",
+          github: 'https://github.com/CARSDev/MedTel'
         },
         {
           images: [image1, image2, image3, image4],
           title: "Athena Fitness",
           desc: "",
-          link: "http://athenafitness.devmtn-projects.com/#/"
+          link: "http://athenafitness.devmtn-projects.com/#/",
+          github: 'https://github.com/csnye86/fitness-app'
         }
       ]
     };
@@ -49,6 +51,7 @@ export default class Projects extends Component {
             image3={project.images[2]}
             image4={project.images[3]}
             link={project.link}
+            github={project.github}
           />
           <FontAwesomeIcon icon="angle-down" id="arrowDown" />
         </div>

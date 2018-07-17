@@ -48,6 +48,10 @@
   border-radius: 3px;
 }
 
+.projTitle > h2 {
+  transition: 0.5s ease;
+}
+
 .projTitle {
   font-size: 30px;
   margin: 0px;
@@ -111,6 +115,15 @@
   transform: scale(1);
 
 }
+.github {
+  font-size: 30px;
+  /* position: absolute; */
+  
+  font-weight: bolder;
+  /* bottom: 5px; */
+  opacity: 0;
+  transition: 0.5s ease;
+}
 
 .projOverview:hover .img{
   transform: scale(0.95);
@@ -119,14 +132,26 @@
 
 .projOverview:hover .projTitle {
   transform: scale(0.95);
-  font-size: 20px;
+}
+
+.projOverview:hover .projTitle > h2 {
+  transform: scale(0.95) translateY(-40px);
+  font-size: 35px;
   color: #5ccbff;
 }
 
 .projOverview:hover .hidden {
-  /* box-shadow: inset 0px 0px 18px 0px rgba(255,255,255,0.6); */
   transform: scale(0.95);
   opacity: 1;
   z-index: 10;
   width: 100%;
+}
+
+.projOverview:hover .github {
+  transform: translateY(40px);
+  opacity: 1;
+}
+
+.hidden a:hover, h2:hover {
+  color: lightgray;
 }
