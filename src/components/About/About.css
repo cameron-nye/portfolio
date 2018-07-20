@@ -59,6 +59,7 @@
   animation: float-up 1.8s;
   color: whitesmoke;
   border-radius: 2px;
+  font-weight: 100;
 }
 
 .aboutCont > .aboutPic:nth-child(1) {
