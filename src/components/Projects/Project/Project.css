@@ -154,3 +154,13 @@
 .hidden a:hover, h2:hover {
   color: lightgray;
 }
+
+.construction {
+  color: #ff7300;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+.hideLinks {
+  visibility: hidden;
+}

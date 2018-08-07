@@ -80,7 +80,6 @@ class Project extends Component {
     const { classes, theme } = this.props;
     const { activeStep } = this.state;
     const maxSteps = pics.length;
-    console.log(this.props.image1);
     return (
       <div className="project">
         {this.state.toggleCarousel ? (
@@ -155,17 +154,17 @@ class Project extends Component {
               <h4>{this.props.desc}</h4>
             </div>
             <div className="hidden">
-              <a href={this.props.link}>
-                <h2>Live Site</h2>
+              <a href={this.props.link} className={this.props.underConstruction === true ? 'hideLinks' : null}>
+                <h2 >Live Site</h2>
               </a>
               <div className="github">
-                <a href={this.props.github}>Github</a>
+              {this.props.underConstruction === true ? 
+                  <div className='construction'>Currently Under Construction</div>
+                :
+                  <a href={this.props.github}>Github</a>
+              }
               </div>
-              <h2
-                onClick={() => {
-                  this.toggleFn();
-                }}
-              >
+              <h2 onClick={() => {this.toggleFn()}} className={this.props.underConstruction === true ? 'hideLinks' : null}>
                 Images
               </h2>
             </div>

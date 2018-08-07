@@ -12,6 +12,7 @@ import med1 from "./FitnessPics/med1.png";
 import med2 from "./FitnessPics/med2.png";
 import med3 from "./FitnessPics/med3.png";
 import med4 from "./FitnessPics/med4.png";
+import birds1 from '../../pictures/birds_home.png'
 //Style
 import "./Projects.css";
 
@@ -21,27 +22,35 @@ export default class Projects extends Component {
     this.state = {
       projects: [
         {
+          images: [birds1],
+          title: "Birds from the Heart",
+          desc: '',
+          link: '',
+          github: '',
+          underConstruction: true
+        },
+        {
           images: [med1, med2, med3, med4],
           title: "MedTel: Medical Charting",
           desc: "",
           link: "https://medtel.devmtn-projects.com/#/",
-          github: 'https://github.com/CARSDev/MedTel'
+          github: 'https://github.com/CARSDev/MedTel',
+          underConstruction: false
         },
         {
           images: [image1, image2, image3, image4],
           title: "Athena Fitness",
           desc: "",
           link: "http://athenafitness.devmtn-projects.com/#/",
-          github: 'https://github.com/csnye86/fitness-app'
+          github: 'https://github.com/csnye86/fitness-app',
+          underConstruction: false
         }
-      ]
+      ],
     };
   }
 
   render() {
     let projectList = this.state.projects.map((project, i) => {
-      // console.log(project)
-      console.log(this.state.projects.length)
       return (
         <div key={project + i} className="projectCont">
           <Project
@@ -53,6 +62,7 @@ export default class Projects extends Component {
             image4={project.images[3]}
             link={project.link}
             github={project.github}
+            underConstruction={project.underConstruction}
           />
           {i < this.state.projects.length - 1 ? <FontAwesomeIcon icon="angle-down" id="arrowDown" />: null}
         </div>
