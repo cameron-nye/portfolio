@@ -1,6 +1,7 @@
-/* .App {
-
-} */
+.App {
+  display: flex;
+  justify-content: center;
+}
 
 .navMain {
   position: relative;
@@ -8,9 +9,21 @@
   display: flex;
   width: 90vw;
   margin-top: 50px;
-  margin-left: 5vw;
+  /* margin-left: 5vw; */
   position: fixed;
   justify-content: space-between;
+}
+
+.hamMenu {
+  box-sizing: border-box;
+  width: 30px;
+  height: 35px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  animation: float-down 0.9s 1s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
 }
 
 .scrolled {
@@ -96,18 +109,6 @@ h3 {
   animation-fill-mode: forwards;
   visibility: hidden;
   color: #9b9b9b;
-}
-
-.hamMenu {
-  box-sizing: border-box;
-  width: 30px;
-  height: 35px;
-  position: fixed;
-  right: 5vw;
-  cursor: pointer;
-  animation: float-down 0.9s 1s;
-  animation-fill-mode: forwards;
-  visibility: hidden;
 }
 
 .line {
