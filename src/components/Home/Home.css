@@ -26,6 +26,10 @@ h1 {
 
 }
 
+h4 {
+  margin: 0px;
+}
+
 .page1cont h4 {
   font-size: 33px;
   font-weight: bolder;
