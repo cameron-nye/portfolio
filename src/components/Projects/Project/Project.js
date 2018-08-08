@@ -159,7 +159,7 @@ class Project extends Component {
               </a>
               <div className="github">
               {this.props.underConstruction === true ? 
-                  <div className='construction'>Currently Under Construction</div>
+                  <div className='construction'>Currently in Development</div>
                 :
                   <a href={this.props.github}>Github</a>
               }
