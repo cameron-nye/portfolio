@@ -31,11 +31,7 @@ h1 {
   font-weight: bolder;
   margin-left: 50px;
   margin-top: 10px;
-  /* z-index: 1; */
   color: #9b9b9b;
-}
-
-h4 {
   margin: 0px;
 }
 
@@ -71,20 +67,57 @@ h4 {
 
   .guitar {
     height: 10%;
+    max-width: 400px;
   }
 }
 
 /* for tablet portrait up  */
 @media (min-width: 600px) {
+  .page1cont > h1 {
+    font-size: 5em;
+  }
 
+  .page1cont > h4 {
+    font-size: 2.1em;
+    margin-left: 30px;
+  }
+
+  .guitar {
+    height: 15%;
+    max-width: 600px;
+  }
 }
 
 /* for tablet landscape up  */
 @media (min-width: 900px) {
+  .page1cont > h1 {
+    font-size: 7em;
+  }
 
+  .page1cont > h4 {
+    font-size: 2.6em;
+    margin-left: 40px;
+  }
+
+  .guitar {
+    height: 20%;
+    max-width: 800px;
+  }
 }
 
 /* for desktop up  */
 @media (min-width: 1200px) {
+  .page1cont > h1 {
+    font-size: 120px;
+  }
 
+  .page1cont > h4 {
+    font-size: 2.9em;
+    margin-left: 50px;
+  }
+
+  .guitar {
+    height: 20%;
+    max-width: 1200px;
+  }
 }

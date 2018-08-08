@@ -80,7 +80,7 @@ export default class Contact extends Component {
                       this.inputHandler(e, "name");
                     }}
                     margin="normal"
-                  />oni'
+                  />
                 </div>
                 <div className="email">
                   <TextField
