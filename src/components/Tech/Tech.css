@@ -79,3 +79,25 @@ section h5 {
   border-radius: 500px;
 }
 
+/* for phone only */
+@media (max-width: 599px) {
+  .page2Title {
+    font-size: 55px;
+  }
+}
+
+/* for tablet portrait up  */
+@media (min-width: 600px) {
+
+}
+
+/* for tablet landscape up  */
+@media (min-width: 900px) {
+
+}
+
+/* for desktop up  */
+@media (min-width: 1200px) {
+
+}
+

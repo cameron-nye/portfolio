@@ -209,22 +209,42 @@ h3 {
   }
 }
 
+/* for small phone only */
+@media (max-width: 372px) {
+  .navMain{
+    margin-top: 30px;
+  }
+  .dropdown ul {
+    font-size: 30px;
+  }
+  .dropdown ul .mobileSite {
+    font-size: 14px;
+  }
+}
 /* for phone only */
-@media (max-width: 599px) {
-
+@media (min-width: 373px) {
+  .navMain{
+    margin-top: 30px;
+  }
+  .dropdown ul {
+    font-size: 40px;
+  }
+  .dropdown ul .mobileSite {
+    font-size: 20px;
+  }
 }
 
-/* for tablet portrait up  */
 @media (min-width: 600px) {
-
+  .navMain{
+    margin-top: 50px;
+  }
+  .dropdown ul {
+    font-size: 70px;
+  }
+  .dropdown ul .mobileSite {
+    font-size: 26px;
+  }
 }
 
-/* for tablet landscape up  */
-@media (min-width: 900px) {
 
-}
 
-/* for desktop up  */
-@media (min-width: 1200px) {
-
-}
